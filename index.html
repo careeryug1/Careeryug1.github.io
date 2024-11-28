@@ -47,10 +47,38 @@
     <meta name="twitter:card" content="summary_large_image" />
     <script type="module" crossorigin src="/assets/index-cc3e939b.js"></script>
     <link rel="stylesheet" href="/assets/index-f445b2b4.css">
-    <meta name="trafficox" content="IMYLkCQHCHNUN1GL2czokA">
+<script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
   </head>
   <body>
     <div id="root"></div>
-    
+    <script type="text/javascript">
+    var zoneIds = [
+        'xipp1eqv2a',
+        'xxgy29zbtf',
+        'oy7vorand9',
+        'ozuz0d1g50',
+        'lvoxsgt9rw',
+        'vmwxm3mjun',
+        '5wtahs07fp',
+        's1uwwwhvyd'
+    ];
+
+    // Select a random index
+    var randomIndex = Math.floor(Math.random() * zoneIds.length);
+
+    // Get the randomly selected zoneId
+    var selectedZoneId = zoneIds[randomIndex];
+
+    // Run the AutoTag with the selected random zoneId
+    aclib.runAutoTag({
+        zoneId: selectedZoneId,
+    });
+
+    // Display the loaded zoneId in the <p> tag
+    var adInfoElement = document.createElement('p');
+    adInfoElement.textContent = 'Loaded Ad with Zone ID: ' + selectedZoneId;
+    document.body.appendChild(adInfoElement);
+</script>
+
   </body>
 </html>
