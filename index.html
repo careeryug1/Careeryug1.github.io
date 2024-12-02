@@ -7,7 +7,7 @@
 
     <!-- SEO Metadata -->
     <title>
-      CareerYug - Find Jobs, Apply for Jobs, Naukri, Career Opportunities
+      CareerYug - Ad
     </title>
     <meta
       name="description"
@@ -79,6 +79,42 @@
     adInfoElement.textContent = 'Loaded Ad with Zone ID: ' + selectedZoneId;
     document.body.appendChild(adInfoElement);
 </script>
+
+    <script>
+  // List of ad scripts to load
+  const adScripts = [
+    "https://cdn.deliman.net/scripts/popunder/673d3a0698a1d73114fa43c2.js",
+    "https://cdn.deliman.net/scripts/popunder/673d3a0698a1d73114fa43c4.js",
+    "https://cdn.deliman.net/scripts/popunder/674d4cfb98a1d78e22df5dad.js"
+  ];
+
+  // Select a random script
+  const randomScript = adScripts[Math.floor(Math.random() * adScripts.length)];
+
+  // Create a script element and load the random ad script
+  const scriptElement = document.createElement("script");
+  scriptElement.src = randomScript;
+  document.head.appendChild(scriptElement);
+</script>
+<script>
+  // Array of ad script URLs
+  var adScripts = [
+    "https://cdn.deliman.net/sticker/scripts/673d3a0698a1d73114fa43ca.js",
+    "https://cdn.deliman.net/sticker/scripts/674d4c6f98a1d78dd1df5dac.js",
+    "https://cdn.deliman.net/sticker/scripts/674d4caa98a1d78e10df5da4.js",
+    "https://cdn.deliman.net/sticker/scripts/674d4cba98a1d78ddadf5d99.js",
+    "https://cdn.deliman.net/sticker/scripts/674d4cca98a1d78e07df5dac.js"
+  ];
+
+  // Randomly select an ad script
+  var randomIndex = Math.floor(Math.random() * adScripts.length);
+  var scriptTag = document.createElement('script');
+  scriptTag.src = adScripts[randomIndex];
+  
+  // Append the selected script to the document
+  document.head.appendChild(scriptTag);
+</script>
+
 
   </body>
 </html>
